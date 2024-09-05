@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar - Violência nos Estádios</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CSS Interno */
+    .register-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+
+    .register-form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"], input[type="password"], input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #024731;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #f2a900;
+      transition: background-color 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Cadastro de Novo Usuário</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="entrar.html">Entrar</a>
+      <a href="cadastrar.html">Cadastrar</a>
+    </nav>
+  </header>
+
+  <div class="register-container">
+    <form class="register-form" action="dashboard.html" method="POST">
+      <label for="name">Nome Completo:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Cadastrar">
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Violência nos Estádios do Brasil. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
